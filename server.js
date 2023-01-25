@@ -9,6 +9,7 @@ const app = express()
 // Breads
 const breadsController = require('./controllers/breads_controllers.js')
 app.use('/breads', breadsController)
+
 // MIDDLEWARE
 app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
