@@ -4,6 +4,9 @@ const Default = require('./layouts/Default')
 function New () {
     return (
       <Default>
+        <div className="backButton">
+             <a href="/breads"><button>Go back to the index</button></a>
+        </div>
         <h2>Add a new bread</h2>
         <form action='/breads' method='POST'>
           <label htmlFor="name">Name</label>
@@ -25,9 +28,10 @@ function New () {
             id="hasGluten"
             defaultChecked
           />
-          <br />
+          <br/>
           <input type="submit"/>
         </form>
+
       </Default>
     )
 }
