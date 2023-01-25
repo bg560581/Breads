@@ -13,7 +13,6 @@ breads.get('/', (req, res) => {
     )
 })
 
-// SHOW
 breads.get('/:arrayIndex', (req, res) => {
     if (Bread[req.params.arrayIndex]) {
       res.render('Show', {
@@ -23,6 +22,7 @@ breads.get('/:arrayIndex', (req, res) => {
       res.send('404')
     }
   })
+  
   
   
   
